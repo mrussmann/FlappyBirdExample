@@ -38,3 +38,5 @@ score
 /bin/
 /pyproject.toml
 /src/META-INF/
+
+*.log
