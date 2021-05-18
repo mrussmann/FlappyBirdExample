@@ -8,3 +8,4 @@ ports:
 tasks:
   - init: echo 'init script' # runs during prebuild
     command: export JAVA_TOOL_OPTIONS='-Xmx4096m -Dsun.java2d.xrender=false'
+  - command: mvn compile && mvn exec:java -Dexec.mainClass="com.kingyu.rlbird.ai.TrainBird" -Dexec.args="-p -t"
